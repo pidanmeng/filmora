@@ -10,6 +10,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   build: {
+    assetsPrefix: 'https://filmora-landingpage.netlify.app/',
     inlineStylesheets: 'always',
   },
   integrations: [react()],
