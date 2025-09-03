@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+// Component Imports
+import Button from '../components/Button.astro';
+import LayoutRoot from '../layouts/main.astro';
+import B from '@/components/B';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<LayoutRoot content={{ title: 'WTF' }}>
+  <div class="grid place-items-center h-screen content-center">
+    <Button>Tailwind Button in Astro!</Button>
+    <a href="/markdown-page" class="p-4 underline"
+      >Markdown is also supported...</a
+    >
+    <B client:visible />
+  </div>
+</LayoutRoot>
